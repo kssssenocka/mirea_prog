@@ -1,0 +1,7 @@
+function get_fibbonachi_rec(n::Int)::Int
+    if n == 1 || n == 2
+        return 1
+    end
+
+    return get_fibbonachi_rec(n-1) + get_fibbonachi_rec(n - 2)
+end
